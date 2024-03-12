@@ -12,6 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "axios": "^1.6.7",
     "element-plus": "^2.6.1",
     "pinia": "^2.1.7",
     "vue": "^3.4.15",
@@ -24,6 +25,7 @@
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
     "husky": "^8.0.0",
+    "pinia-plugin-persistedstate": "^3.2.1",
     "prettier": "^3.0.3",
     "sass": "^1.71.1",
     "unplugin-auto-import": "^0.17.5",
