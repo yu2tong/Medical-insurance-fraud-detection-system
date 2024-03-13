@@ -1,3 +1,7 @@
 <template>
-    登录页
+    <div>login</div>
 </template>
+<script>
+</script>
+<style>
+</style>

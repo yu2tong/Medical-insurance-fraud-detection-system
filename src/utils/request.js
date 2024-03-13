@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useUserStore } from '@/stores'
 import { ElMessage } from 'element-plus'
 import router from '@/router'
-const baseURL = 'http://big-event-vue-api-t.itheima.net'
+const baseURL = 'http://big-event-vue-api-t.itheima.net'  //后端服务器提供的 API 地址，用于定位后端服务的入口点
 const instance = axios.create({
     //TODO 1. 基础地址，超时时间
     baseURL,
@@ -12,7 +12,7 @@ const instance = axios.create({
 //请求拦截器
 instance.interceptors.request.use(
     (config) => {
-        //TOFO 2.携带token
+        //TODO 2.携带token
         const useStore = useUserStore()
         if (useStore.token) {
             config.headers.Authorization = useStore.token
